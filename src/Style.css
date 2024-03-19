@@ -1,0 +1,37 @@
+body {
+    margin: 0 auto;
+    background-color: seagreen;
+}
+
+img {
+    height: 300px;
+    width: 600px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 1rem;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 15%;
+    border: 0px solid;
+    background-color: aqua;
+
+}
+
+p {
+    font-size: 1.3rem;
+}
