@@ -5,6 +5,9 @@ import './Style.css';
 function homeContent() {
 
     const content = document.getElementById('content');
+   
+    const homeContainer = document.createElement('div');
+    homeContainer.classList.add('homeContainer')
 
     const header = document.createElement("h1");
     header.textContent = 'The Crusty Crab';
@@ -15,11 +18,11 @@ function homeContent() {
     const desc = document.createElement('p');
     desc.textContent = 'The best restaurant in Bikini Bottom. Chum Bucket #1 hater.'
 
-    content.appendChild(header);
-    content.appendChild(myImage);
-    content.appendChild(desc);
+    homeContainer.appendChild(header);
+    homeContainer.appendChild(myImage);
+    homeContainer.appendChild(desc);
 
-    return content;
+    content.appendChild(homeContainer);
 }
 
 

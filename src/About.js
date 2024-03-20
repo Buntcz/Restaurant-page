@@ -6,6 +6,9 @@ import './Style.css';
 function aboutPage() {
     const content = document.getElementById('content');
 
+    const allContainer = document.createElement('div');
+    allContainer.classList.add('allContainer');
+
     const aboutContainer_1 = document.createElement('div');
     aboutContainer_1.classList.add('aContainer1');
     const aboutHeader = document.createElement('h1');
@@ -22,7 +25,7 @@ function aboutPage() {
     const spongeDesc = document.createElement('p');
     spongeDesc.textContent = 'Meet Spongebob, our best employee, and the best burger chef you`ll ever find, he will give everything for his job, literally.';
     aboutContainer_2.appendChild(spongeImg);
-    aboutContainer_2.append(spongeDesc);
+    aboutContainer_2.appendChild(spongeDesc);
 
     const aboutContainer_3 = document.createElement('div');
     aboutContainer_3.classList.add('aContainer3');
@@ -44,10 +47,12 @@ function aboutPage() {
     aboutContainer_4.appendChild(krabImage);
     aboutContainer_4.appendChild(krabDesc);
 
-    content.appendChild(aboutContainer_1);
-    content.appendChild(aboutContainer_2);
-    content.appendChild(aboutContainer_3);
-    content.appendChild(aboutContainer_4);
+    allContainer.appendChild(aboutContainer_1);
+    allContainer.appendChild(aboutContainer_2);
+    allContainer.appendChild(aboutContainer_3);
+    allContainer.appendChild(aboutContainer_4);
+
+    content.appendChild(allContainer);
 }
 
 export { aboutPage }

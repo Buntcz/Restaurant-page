@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     background-color: seagreen;
+    background-image: url(/src/images/Bikini_Bottom.jpg);
 }
 
 img {
@@ -13,6 +14,8 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 nav {
@@ -20,6 +23,9 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #5db7ce;
+    width: 100%;
+    
 }
 
 button {
@@ -34,4 +40,48 @@ button {
 
 p {
     font-size: 1.3rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.headContainer { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    background-color: #18a6c7;
+}
+
+.allContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #18a6c7;
+}
+
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #18a6c7;
+}
+
+.menuContainer, .firstContainer, .secondContainer, .thirdContainer, .fourthContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aContainer1, .aContainer2, .aContainer3, .aContainer4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

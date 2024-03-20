@@ -5,6 +5,9 @@ import img4 from './images/Kelp_Shake.jpg';
 import './Style.css';
 
 function menuContent() {
+    const headContainer = document.createElement('div');
+    headContainer.classList.add('headContainer')
+
     const content = document.getElementById('content')
     const menuContainer = document.createElement('div')
     menuContainer.classList.add('menuContainer')
@@ -17,7 +20,7 @@ function menuContent() {
     menuContainer.appendChild(menuHeader2);
 
     const firstContainer = document.createElement('div');
-    firstContainer.classList.add('firstMenuItem')
+    firstContainer.classList.add('firstContainer')
     const burgerImage = document.createElement('img');
     burgerImage.src = img1;
     const burgerName = document.createElement('h3');
@@ -68,11 +71,13 @@ function menuContent() {
     fourthContainer.appendChild(menuName);
     fourthContainer.appendChild(menuDesc)
 
-    content.appendChild(menuContainer);
-    content.appendChild(firstContainer);
-    content.appendChild(secondContainer);
-    content.appendChild(thirdContainer);
-    content.appendChild(fourthContainer);
+    headContainer.appendChild(menuContainer);
+    headContainer.appendChild(firstContainer);
+    headContainer.appendChild(secondContainer);
+    headContainer.appendChild(thirdContainer);
+    headContainer.appendChild(fourthContainer);
+
+    content.appendChild(headContainer);
 }
 
 export { menuContent }
